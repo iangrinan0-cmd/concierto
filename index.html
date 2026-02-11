@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invitación 🎶</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #ff6ec4, #7873f5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        color: white;
+        overflow: hidden;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(15px);
+        padding: 30px 20px;
+        border-radius: 25px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        width: 90%;
+        max-width: 400px;
+        animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 1.1rem;
+        margin: 8px 0;
+    }
+
+    .highlight {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 50px;
+        font-size: 1rem;
+        cursor: pointer;
+        background: white;
+        color: #7873f5;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        transform: scale(1.1);
+        background: #ffe066;
+        color: black;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>🎵 ¡Estás invitado! 🎵</h1>
+    <p>Ven a mi concierto el</p>
+    <p class="highlight">17 de marzo</p>
+    <p>a las</p>
+    <p class="highlight">8:00 PM</p>
+    <p>en la</p>
+    <p class="highlight">Casa de Cultura</p>
+
+    <button onclick="alert('¡Nos vemos allí! 🎶🔥')">
+        Confirmar asistencia
+    </button>
+</div>
+
+</body>
+</h
